@@ -1,0 +1,517 @@
+
+/*#region :::::::::::: FORMULARIO :::::::::::: */
+body{
+    font-family: sans-serif;
+    color: #002233;
+    /* margin:0; */
+}
+td{
+    /* border:1px solid red; */
+    height:30px;
+    padding-left:10px;
+}
+.mapa{
+    height:200px;
+    width: 200px;
+    padding-left:10px;
+}
+#redondela{
+    border-radius: 100%;
+    background: #00bb77;
+    color:#ffffff;
+    height: 15px; 
+    padding: 15px;
+    text-align: center;
+    width: 15px;
+}
+#sub_confirmar{
+    background: #00bb77;
+    color:#ffffff;
+    font-size: 20px;
+    height:50px;
+    margin-left:40%;
+    width:200px;
+}
+/*#endregion :::::::::::: FORMULARIO :::::::::::: */
+
+/*#region :::::::::::: REGISTRARSE :::::::::::::: */
+.tab-container{
+    margin:10% auto;
+    position: inherit;
+    width:500px;
+}
+.tabs{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display: flex;
+}
+.tabs_item{
+    border:1px solid #00bb77;
+    background: #00bb77;
+    border-bottom: none;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-right: 4px;
+    padding: 15px 35px 5px 35px;
+    position: relative;
+    top:1px;
+    z-index: 0;
+}
+.tabs_item.active{
+    background:#fff;
+    color:#000;
+    z-index:0;
+}
+.panels_item{
+    position: absolute;
+    top:-1000%;
+}
+.panels_item.active{
+    /* border:1px solid red; */
+    position: relative;
+    left:0;
+}
+.object{
+    height:550px;
+    width:600px;
+}
+/*#endregion :::::::::::: REGISTRARSE :::::::::::::: */
+
+/*#region :::::::::::: INGRESAR :::::::::::::: */
+.tblIngresar{
+    padding: 3%;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+    margin:10% auto;
+    position: inherit;
+    width:500px;
+}
+
+#sub_conf_ingresar{
+    background: #00bb77;
+    color:#ffffff;
+    font-size: 20px;
+    height:30px;
+    width:150px;
+}
+/*#endregion :::::::::::: INGRESAR :::::::::::::: */
+
+/*#region  :::::::::::: HEADER :::::::::::::: */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+ }
+body .butt{
+    position: relative;
+    right: -50%;
+    padding: 250px 0;
+    padding-top: 2px
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* padding: 0 100px; */
+    padding: 0% 10% 0 0px;
+    background: #002233;
+    width: 100%;
+    box-sizing: border-box;
+}
+header .logo{
+    position: relative;
+    /* position: absolute; */
+    top: 0;
+    left: 5%;
+    color: #fff;
+    line-height: 50px;
+    font-size: 30px;
+    float: left;
+    font-weight: bold;
+}
+header .imgUsuario{
+    position: relative;
+    /* position: absolute; */
+    top: 15%;
+    line-height: 50px;
+    float: right;
+    width: 30px;
+}
+header nav{
+    float: right;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+header nav ul li{
+    list-style: none;
+    position: relative;
+    
+}
+header nav ul li.sub-menu::before{
+    /* content: '\f0d7 '; */
+    font-family: fontAwesome;
+    position: absolute;
+    line-height: 50px;
+    color: #fff;
+    right: 5px;
+}
+header nav ul li.activate.sub-menu::before{
+    /* content: '\f0d8 '; */
+    }
+header nav ul li ul{
+    position: absolute;
+    left: 0;
+    background: #002233;
+    display: none;
+    z-index: 1;
+    }
+header nav ul li.activate ul{
+    display: block;
+}
+header nav ul li ul li{
+    display: block;
+    width: 200px;
+}
+header nav ul li a{
+    height: 80px;
+    line-height: 50px;
+    padding: 0px 12px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    /* background: #00bb77; */
+}
+header nav ul li a:hover,
+header nav ul li a.activate
+{
+    color: #fff;
+    background: #00bb77;
+}
+.menu{
+    color: #fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width:700px){
+    /* @media (max-width:991px){ */
+    header{
+        padding: 0 20px;
+    }
+    .menu{
+        display: block;
+    }
+    header nav{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        /* height: calc(100vh - 50px); */
+        background:#002233;
+        top: 70px;
+        left: -100%;
+        transition: 0.5;
+    }
+    header nav.activate{
+        left: 0;
+    }
+    header nav ul{
+        display: block;
+        text-align: center;
+    }
+    header nav ul li a{
+        border-bottom: 1px solid rgba(0, 0, 0, 2);
+    } 
+    header nav ul li.activate ul{
+        position: relative;
+        background: #002233;
+    }
+    header nav ul li ul li{
+        width: 100%;
+    }   
+}
+.logo{
+    color: #fff;
+}
+.logo_IMG{
+    width:55%;
+    padding-top: 6%;
+    padding-right: 5%;
+}
+/*#endregion :::::::::::: HEADER :::::::::::::: */
+
+/*#region :::::::::::: OFERTA :::::::::::::: */
+/* *{
+    background: red;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+} */
+.body_oferta{
+    /* background: red; */
+     font-family: sans-serif;
+}
+.wrap{
+    max-width: 90%;
+    width: 90%;
+    margin: 10% 0 0 20%;
+}
+/* .wrap > h1{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px 0px;
+    color:#002233;
+} */
+/* .wrap > h1:after{
+    content:'';
+    width:100%;
+    height:1px;
+    margin:20px 0;   
+} */
+.store_wrapper{
+    /* background:green; */
+    display: flex;
+    /* margin: 10% 10% auto; */
+}
+.category_list{
+    /* background:blue; */
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px 0px 20px 0px;
+    font-size: 20px;
+}
+.category_list .category_item{
+    background:#00bb77;
+    border: 1px solid #00bb77;
+    border-right: #fff;
+    border-radius: 5px 0 0 5px;
+    padding: 15px 50px 15px 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    left: 1px;
+}
+.ct_item_active{
+    /* border: 1px solid #00bb77; */
+    border-right: #fff;
+    background: #fff !important;
+    color: #002233 !important;
+    cursor: pointer;
+}
+.product_list{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    border:1px solid #00bb77;
+    border-radius: 0 5px 5px 5px;
+    padding: 2% 0% 0% 2%;
+}
+.product_list .product_item{
+    align-items: center;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5%;
+    margin-left: 8%;
+    margin-bottom: 4%;
+    transition: all .4s;
+    width: 20%;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+    background: #fff;
+
+}
+.product_list .product_item img{
+    border-radius: 5px 5px 5px 5px;
+    width: 100%;
+}
+.product_list .product_item a{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    /* background: #002233; */
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    margin: 5px;
+}
+/*#endregion :::::::::::: OFERTA :::::::::::::: */
+
+/*#region :::::::::::: SLIDESHOW :::::::::::::: */
+.slide_content{
+    margin: auto;
+    margin-top: 10%;
+    position: relative;
+    width: 40%;
+    /* height: 30%; */
+    /* clip: rect(0px,60px,200px,0px); */
+    z-index: -1;
+    
+}
+.slide_IMG{
+    width:100%;
+    /* max-height:100%; */
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.5);
+    padding: 2%;
+}
+/* .w3-display-container{
+    display: block;
+} */
+/* .w3-display-middle{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%)
+} */
+/* .flecha_izq{
+    background: rgba(0, 22, 33, 0.3);
+    border: none;
+    color: #fff;
+    padding: 3%;
+    position: absolute;
+    top: 45%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+}
+.flecha_der{
+    position: absolute;
+    top: 45%;
+    right: 0%;
+    padding: 3%;
+    background: rgba(0, 22, 33, 0.3);
+    color: #fff;
+    border: none;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(0%,-50%);
+} */
+
+/*#endregion :::::::::::: SLIDESHOW :::::::::::::: */
+
+/*#region :::::::::::: INDEX :::::::::::::: */
+.info{
+    display: inline-flex;
+	position: fixed;
+	bottom: 0;
+    width: 100%;
+    /* padding-left:20%; */
+    z-index: -1;
+    transform:translate(18%,0%);
+    -ms-transform:translate(18%,0%)
+}
+.info_bottom{
+    background: #00bb77;
+    border:1px solid #fff;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 5% 8% 5%;
+    font-size: 20px;
+}
+/*#endregion :::::::::::: INDEX :::::::::::::: */
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height:60px;
+    margin-top:15px;
+    background-color: #002233;
+}
+footer .pie
+{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-align: center;
+    float: left;
+}
+footer nav
+{
+    float: right;
+} 
+footer nav ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+footer nav ul li
+{
+    list-style: none;
+}
+footer nav ul li a
+{
+    height: 60px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+footer nav ul li a:hover
+{
+    color: #fff;
+    background: #00bb77;
+     
+}   
+.icono {
+    align-content: flex-end;
+    width: 30px;
+    height: 30px;   
+    margin-top: 10px;
+    padding-right: 50px 100px;
+        
+}
+.errorLogin{
+    font-style: oblique;
+    color: red;
+}
+.olvidoCon{
+    font-style: oblique;
+    color: #00bb77;
+}
+#customers {
+    margin:10% auto;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #002233;
+    color: white;
+  }
+  #map{
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+  }
